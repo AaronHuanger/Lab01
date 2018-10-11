@@ -8,13 +8,19 @@ int main(){
 	cout<<"Enter number of rows and columns:\n";
 	cin>>rows>>cols;
 
-	while(rows>0 && cols>0){
-	for(int r=0;r<rows;r++){
-		for(int c=0;c<cols;c++){
-			cout<<"X.";
+	while(rows>0 && cols>0)
+	{
+		for(int r=0;r<rows;)
+		{	
+			for(int c=0;c<cols;)
+			{
+				cout<<"X.";
+				cols--;
+			}
+			
+			cout<<endl;
+			rows--;
 		}
-		cout<<endl;
-	}
 	}
 	return 0;
 }
