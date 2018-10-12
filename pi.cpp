@@ -17,7 +17,12 @@ int main()
 		cout<<"Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit):"
 			<<endl;
 		cin>>n;
-		cout<<"The approximate value of pi using "<<(n+1)<<" terms is: "<<Leibniz(n)<<endl;
+		if(n==0||n==-1)
+		{
+		cout<<"The approximate value of pi using "<<(n+1)<<" term is: "<<Leibniz(n)<<endl;
+		}
+		else{cout<<"The approximate value of pi using "<<(n+1)<<" terms is: "<<Leibniz(n)<<endl;
+	}
 	}
 	return 0;
 }
